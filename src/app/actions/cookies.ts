@@ -10,11 +10,13 @@ export async function setCookies() {
     name: "cookie1",
     value: "value1",
     httpOnly: true,
+    sameSite: "strict",
   });
   cookieStore.set({
     name: "cookie2",
     value: "value2",
     httpOnly: true,
+    sameSite: "strict",
   });
 
   // Revalidate and redirect after the action is complete
