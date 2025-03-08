@@ -1,5 +1,32 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## About This Project
+
+This project demonstrates cookie management in Next.js 15 using Server Components and Route Handlers. It showcases:
+
+- Setting and removing cookies using server actions
+- Handling cookie deletion with route handlers
+- Page-level cookie management with redirects
+- Async cookie operations in Server Components
+
+### Cookie Management Implementation
+
+The project uses three main approaches for cookie handling:
+
+1. **Page-Level Cookie Removal** (`/remove-cookies/page.tsx`):
+   - Uses an async Server Component
+   - Calls a utility function to remove cookies
+   - Shows a loading state during the operation
+
+2. **Route Handler** (`/api/remove-all-cookies/route.ts`):
+   - Provides an API endpoint for cookie deletion
+   - Uses Next.js's `cookies()` API
+   - Handles redirects after cookie operations
+
+3. **Server Actions** (`/app/actions/cookies.ts`):
+   - Implements form-based cookie operations
+   - Provides direct cookie manipulation from components
+
 ## Getting Started
 
 First, run the development server:
