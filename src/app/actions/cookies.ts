@@ -32,15 +32,3 @@ export async function removeCookies() {
   revalidatePath("/");
   redirect("/");
 }
-
-export async function removeAllCookies() {
-  const response = await fetch(`${process.env.URL_PROJECT}/api/cookies`, {
-    method: "DELETE",
-  });
-
-  if (!response.ok) {
-    throw new Error("Failed to remove cookies");
-  }
-
-  redirect("/remove-cookies/success");
-}
