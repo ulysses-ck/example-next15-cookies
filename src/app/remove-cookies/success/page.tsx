@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 export default function SuccessPage() {
+  console.log("success page");
   return (
     <div className="min-h-screen flex flex-col gap-4 items-center justify-center">
       <p className="text-lg">Cookies have been removed!</p>
