@@ -1,4 +1,4 @@
-import { removeAllCookies } from '../../utils/removeAllCookies'
+import { removeAllCookies } from "@/utils/removeAllCookies"
 
 export default async function RemoveCookiesPage() {
   await removeAllCookies()
